@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/stylesheet.css' %}">
+    <style>
+        @font-face {
+    src: {% static 'polls/9114.otf'%}
+    font-family Bebas /* Гарнитура шрифта */
+   }
+        .headerfont{
+            font-family: Bebas, 'Bebas';
+        }
+    </style>
+    <meta charset="utf-8"/>
+    <title>Психология программирования</title>
+</head>
+<body>
+<div>
+    <header class="headertext">
+        <strong class="headerfont">Тест: &#171;Психология языков программирования&#187;</strong>
+        <img class="jpg1" src="{% static 'polls/pict/bmstu-emblem.png' %}">
+    </header><!-- .header-->
+    <main class="disclaimertext">
+        <ul>Приветствуем вас на странице теста "Психология языков программирования". <br>
+            Этот эксперимент проводится в рамках научного исследования по курсу "Разработка интернет-приложений".<br>
+            Решение этого теста займет у вас не более 10 минут. В каждом вопросе вы должны написать в поле "Ответ" свой ответ на вопрос "Что делает эта программа" и выбрать один из пяти вариантов сложности кода, где 1 - очень сложно разбираемый код, а 5 - легко читаемый код.<br>
+        </ul>
+        <button class="button1"onclick="location.href='../polls/test/'">Начать эксперимент</button>
+    </main><!-- .content-->
+</div>
+
+<footer class = "footertext">
+    <ul>МГТУ им. Н.Э. Баумана<br>Москва 2016<br>Авторы: Тодосиев Н.Д., Семенова А.Е.</ul>
+</footer>
+</body>
+</html>

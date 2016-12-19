@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/stylesheet.css' %}">
+    <style>
+        @font-face {
+    src: {% static 'polls/9114.otf'%}
+    font-family Bebas /* Гарнитура шрифта */
+   }
+        .headerfont{
+            font-family: Bebas, 'Bebas';
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Тестирование</title>
+    <script type="text/javascript">
+            var sec = 0;
+            function init()
+            {
+                setInterval(tick, 1000);
+            }
+
+            function tick()
+            {
+                sec++;
+                document.getElementById('time').value = sec;
+            }
+
+        </script>
+</head>
+<body onload="init()">
+<div>
+    <header class="headertext">
+        <strong class="headerfont">Номер вопроса: {{ count }}</strong>
+    </header><!-- .header-->
+    <pre class = "textquestion">{{ question.text_question }}</pre>
+</dl>
+    {% csrf_token %}
+    <input type="hidden", name="time", id="time" >
+    <button class="button2" onclick="location.href='../answer'" type="submit">Ответить</button>
+    <script type="text/javascript">
+        var exit = "{{ button_exit }}";
+        if ("{{ button_exit }}" == "True") document.write("<button class=\"button3\" onclick=\"location.href=\'../exit\'\">Выйти</button>");
+    </script>
+</div>
+</body>
+</html>

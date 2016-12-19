@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/stylesheet.css' %}">
+    <style>
+        @font-face {
+    src: {% static 'polls/9114.otf'%}
+    font-family Bebas /* Гарнитура шрифта */
+   }
+        .headerfont{
+            font-family: Bebas, 'Bebas';
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Ответ на вопрос</title>
+</head>
+<body>
+<div>
+    <header class="headertext">
+        <strong class="headerfont">Ответьте на вопрос и продолжайте</strong>
+    </header><!-- .header-->
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="answer" id="answer">
+        <div class="radio">
+            <input type="radio" name="adeq" value="1"><label>1</label>
+            <input type="radio" name="adeq" value="2"><label>2</label>
+            <input type="radio" name="adeq" value="3" checked><label>3</label>
+            <input type="radio" name="adeq" value="4"><label>4</label>
+            <input type="radio" name="adeq" value="5"><label>5</label>
+        </div>
+        <button class="button4" type="submit">Подтвердить</button>
+    </form>
+</div>
+</body>
+</html>

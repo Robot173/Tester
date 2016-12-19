@@ -1,0 +1,137 @@
+
+@font-face {
+    font-family: Geometria;
+    src: url(10262.otf)
+}
+@font-face {
+    font-family: Bebas;
+    src: url(9114.otf)
+}
+.headertext{
+    background-color: #833a8b;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 11px;
+    color: whitesmoke;
+    font-size: 24pt;
+    border-radius: 5px;
+    height: 50px;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.maintext{
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    font-size: 6pt;
+}
+
+.footertext{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 15pt;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font: 12pt sans-serif ;
+    background-color: #958796;
+}
+
+.disclaimertext{
+    font: bold 12pt sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.disclaimertext2{
+    position: fixed;
+    font: bold 12pt sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 400px;
+}
+
+
+.textquestion{
+    font: bold 9pt sans-serif;
+    padding-left: 70px;
+}
+
+.jpg1{
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    width: 42px;
+    height: 50px;
+}
+
+.button1{
+    position: relative;
+    left: 40%;
+    top: 40%;
+    font-size: 18pt;
+}
+button{
+    background-color: #958796;
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: #833a8b;
+    color: #292929;
+}
+.button2{
+    position: absolute;
+    left: 350px;
+    bottom: 120px;
+    font-size: 16pt;
+
+}
+
+.button3{
+    position: absolute;
+    right: 250px;
+    bottom: 120px;
+    font-size: 16pt;
+}
+
+.button4{
+    position: absolute;
+    left: 40px;
+    top: 320px;
+    font-size: 16pt;
+}
+
+.radio{
+    position: relative;
+    top: 150px;
+    left: 40px;
+    font-family: sans-serif;
+    text-align: left;
+    color: #434343;
+}
+
+.thanks{
+    position: static;
+    top: 200px;
+    font: bold 16pt sans-serif;
+}
+.answer{
+    position: relative;
+    top: 100px;
+}
+
+input[type="text"]{
+    position: relative;
+    top: 100px;
+    left: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: #ffffff !important;
+    outline: none;
+    height: 24px;
+    width: 520px;
+    color: #434343;
+}

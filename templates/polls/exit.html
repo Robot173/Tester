@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/stylesheet.css' %}">
+    <style>
+        @font-face {
+    src: {% static 'polls/9114.otf'%}
+    font-family Bebas /* Гарнитура шрифта */
+   }
+        .headerfont{
+            font-family: Bebas, 'Bebas';
+        }
+    </style>
+    <meta charset="utf-8"/>
+    <title>Конец эксперимента</title>
+</head>
+<body>
+<div>
+    <header class="headertext">
+        <strong class="headerfont">Благодарим вас за участие в эксперименте!!</strong>
+        <img class="jpg1" src="{% static 'polls/pict/bmstu-emblem.png' %}">
+    </header><!-- .header-->
+    <main>
+        <ul class="disclaimertext">
+            Вы достигли необходимого количества ответов, или ответили на максимальное число вопросов.<br><br>
+        </ul>
+        <strong class="thanks"><center><br>Большое спасибо!</center></strong>
+    </main><!-- .content-->
+</div>
+<footer>
+     <ul class ="disclaimertext2">
+            Мы благодарны вам за участие.<br> Вы можете так же помочь нам, рассказав друзьям об этом эксперименте.
+     </ul>
+    <ul class = "footertext">МГТУ им. Н.Э. Баумана<br>Москва 2016<br>Авторы: Тодосиев Н.Д., Семенова А.Е.</ul>
+</footer>
+</body>
+</html>
