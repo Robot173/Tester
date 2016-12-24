@@ -105,9 +105,9 @@ button{
 }
 
 .radio{
-    position: relative;
-    top: 150px;
-    left: 40px;
+    position: absolute;
+    top: 270px;
+    left: 45px;
     font-family: sans-serif;
     text-align: left;
     color: #434343;
@@ -121,6 +121,18 @@ button{
 .answer{
     position: relative;
     top: 100px;
+}
+
+.textanswer1{
+    font: bold 12pt sans-serif;
+    position: absolute;
+    top: 130px;
+}
+
+.textanswer2{
+    font: bold 12pt sans-serif;
+    position: absolute;
+    top: 225px;
 }
 
 input[type="text"]{

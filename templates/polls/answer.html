@@ -22,7 +22,9 @@
     </header><!-- .header-->
     <form action="" method="post">
         {% csrf_token %}
+        <ul class="textanswer1">Что делает данный кусок программы?</ul>
         <input type="text" name="answer" id="answer">
+        <ul class="textanswer2">Оцените этот кусок по шкале от 1 (плохо воспринимаемый) до 5 (легко воспринимаемый)</ul>
         <div class="radio">
             <input type="radio" name="adeq" value="1"><label>1</label>
             <input type="radio" name="adeq" value="2"><label>2</label>
